@@ -2,11 +2,19 @@
 
 
 def computepay(h, r):
-    pass  # ...
+    if h>40 :
+        #regular
+        reg=h*r
+        #overtime45
+        
+        ovr=(h-40)*(r*0.5)
+        pay=reg+ovr   
+    else :
+        pay=h*r
+    return pay
 
+hrs = float(input("Enter Hours:"))
+rate=float(input("Enter rate:"))
 
-hrs = float(input("Enter hours? "))
-rte = float(input("Enter rate per hour? "))
-
-p = computepay(hrs, rte)
+p = computepay(hrs, rate)
 print("Pay", p)
