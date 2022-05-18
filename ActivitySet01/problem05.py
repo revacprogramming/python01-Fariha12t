@@ -4,10 +4,9 @@
 def computepay(h, r):
     if h>40 :
         #regular
-        reg=h*r
-        #overtime45
-        
-        ovr=(h-40)*(r*0.5)
+        reg=40*r
+        #overtime
+        ovr=(h-40)*r*1.5
         pay=reg+ovr   
     else :
         pay=h*r
