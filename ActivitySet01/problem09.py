@@ -12,3 +12,4 @@ for line in fh:
             stuff.append(w)
 stuff.sort()
 print(stuff)
+ #done
