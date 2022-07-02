@@ -1,6 +1,6 @@
 # Lists
 
-filename = "dataset,romeo.txt"
+filename = "dataset/romeo.txt"
 fh = open(filename)
 stuff= list()
 
@@ -12,4 +12,4 @@ for line in fh:
             stuff.append(w)
 stuff.sort()
 print(stuff)
- #done
+ 
